@@ -18,6 +18,10 @@ class TerribleVolumeAdjustment(title: String) : JFrame() {
         createUI(title)
     }
 
+    /**
+     * This function generates a GUI window with a button and some labels.
+     * @param title - The title of the whole window of the application.
+     */
     private fun createUI(title: String) {
 
         setTitle(title)
@@ -48,11 +52,18 @@ class TerribleVolumeAdjustment(title: String) : JFrame() {
     }
 }
 
-// Generates a random number between 1 and 100
+/**
+ * Generates a random number between 1 and 100.
+ * @return a random integer
+ */
 fun randomNumber(): Int {
     return Random.nextInt(1, 101)
 }
 
+/**
+ * Adjusts the volume on the computer in which the program is running.
+ * @param volume - The volume the computer is going to be set to.
+ */
 fun adjustVolume(volume: Int) {
     // Shell command to set the volume. Got this line with help from chat.openai.com
     val volumeProcess = Runtime.getRuntime().exec(arrayOf("/usr/bin/osascript", "-e", "set volume output volume $volume"))

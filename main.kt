@@ -65,7 +65,7 @@ fun randomNumber(): Int {
  * @param volume - The volume the computer is going to be set to.
  */
 fun adjustVolume(volume: Int) {
-    // Shell command to set the volume. Got this line with help from chat.openai.com
+    // Shell command to set the volume. Got these 3 lines with help from chat.openai.com
     val volumeProcess = Runtime.getRuntime().exec(arrayOf("/usr/bin/osascript", "-e", "set volume output volume $volume"))
     val volumeReader = BufferedReader(InputStreamReader(volumeProcess.inputStream))
     var vol: String?

@@ -1,3 +1,8 @@
+// Jack Holy
+// This is a kotlin program is intentionally terrible and allows you to change the
+// volume on your computer in a completely unconventional way, being randomly. Simply
+// run the application and press the button on the GUI window to change the volume on
+// your computer.
 import java.awt.EventQueue
 import java.awt.FlowLayout
 import java.awt.Label
